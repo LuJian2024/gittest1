@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  
+    <title>Webside Beispiel</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100vh;
+        }
+
+        nav {
+            display: flex;
+            justify-content: right;
+            align-items: center;
+            background-color: black;
+            height: 100px;
+            color: white;
+            gap: 5px;
+
+        }
+
+        .material-icons {
+            margin-right: 10px;
+        }
+
+        ul {
+            display: flex;
+            gap: 50px;
+            margin-right: 20px;
+            list-style: none;
+        }
+
+        .fourboxes {
+            display: flex;
+            width: 100%;
+            /*按照每个元素内容的基线对齐 ,但是却使得box4的整体向下移动了一些，如何解决?*/
+            align-items: baseline;
+        }
+
+        .box1,
+        .box2,
+        .box3,
+        .box4 {
+            display: flex;
+            flex-direction: column;
+            border-right: 1px solid black;
+            width: 25%;
+            height: 100vh;
+            background-color: rgb(253, 251, 248);
+            justify-content: center;
+            /*box-sizing: border-box;*/
+            /* align-items: center;*/
+
+
+        }
+
+
+        h1,
+        p {
+            width: cover;
+            text-align: center;
+        }
+
+        p {
+            color: red;
+            margin-bottom: -10px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul class="">
+            <li>Home</li>
+            <li>About us</li>
+            <li>Portfolio</li>
+            <li>Offer</li>
+            <li>Contact</li>
+        </ul>
+        <i class="material-icons">favorite</i>
+        <i class="material-icons">favorite</i>
+        <i class="material-icons">favorite</i>
+    </nav>
+    <div class="fourboxes">
+        <div class="box1">
+            <p>01</p>
+            <h1>Exterior</h1>
+        </div>
+        <div class="box2">
+            <p>02</p>
+            <h1>Interior</h1>
+        </div>
+        <div class="box3">
+            <p>03</p>
+            <h1>Furnitur</h1>
+        </div>
+        <div class="box4">
+            <p>04</p>
+            <h1>3D <br>Modeling</h1>
+        </div>
+    </div>
+</body>
+
+</html>
+  
